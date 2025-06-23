@@ -38,7 +38,7 @@
     "Role",
     "rowIndex"
   ],
-  "columnUpdatedAt": 1750408459304,
+  "columnUpdatedAt": 1750687998027,
   "columnWidthMap": {
     "User_Email": 233,
     "User_Name": 123
@@ -78,11 +78,17 @@
     },
     {
       "key": "primaryColumns.rowIndex.computedValue"
+    },
+    {
+      "key": "primaryColumns.Role.buttonLabel"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.Role.cellBackground"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -148,9 +154,12 @@
       "alias": "Role",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = TableUsers.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Role\"])) : Role })()}}",
+      "buttonLabel": "{{(() => { const tableData = TableUsers.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentItem.Role)) : currentItem.Role })()}}",
+      "cellBackground": "",
+      "columnType": "html",
+      "computedValue": "{{(() => { const tableData = TableUsers.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n  `<span style=\"\n    display: inline-block;\n    padding: 4px 8px;\n    border-radius: 999px; /* Pour l'effet pilule */\n    font-weight: bold;\n    color: #FFFFFF; /* Texte blanc */\n    background-color: ${currentItem.Role === 'Admin' ? '#F59E0B' : // Orange pour Admin\n                         currentItem.Role === 'Employé' ? '#3B82F6' : // Bleu pour Employé\n                         '#6B7280'}; /* Gris par défaut */\n  \">\n    ${currentItem.Role}\n  </span>`\n)) : \n  `<span style=\"\n    display: inline-block;\n    padding: 4px 8px;\n    border-radius: 999px; /* Pour l'effet pilule */\n    font-weight: bold;\n    color: #FFFFFF; /* Texte blanc */\n    background-color: ${currentItem.Role === 'Admin' ? '#F59E0B' : // Orange pour Admin\n                         currentItem.Role === 'Employé' ? '#3B82F6' : // Bleu pour Employé\n                         '#6B7280'}; /* Gris par défaut */\n  \">\n    ${currentItem.Role}\n  </span>`\n })()}}",
       "currencyCode": "USD",
+      "customAlias": "",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
@@ -166,6 +175,7 @@
       "isSaveVisible": true,
       "isVisible": true,
       "label": "Role",
+      "menuItemsSource": "STATIC",
       "notation": "standard",
       "originalId": "Role",
       "sticky": "",
@@ -273,6 +283,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 23,
   "searchKey": "",
+  "showInlineEditingOptionDropdown": true,
   "tableData": "{{ getUsers.data }}",
   "textSize": "0.875rem",
   "topRow": 14,
