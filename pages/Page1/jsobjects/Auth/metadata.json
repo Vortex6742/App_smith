@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "68526bd92a1f661159df310f_e1bf38b0-905a-4464-abbb-3422c578499f",
+  "id": "Page1_Auth",
+  "unpublishedCollection": {
+    "name": "Auth",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "currentUserEmail",
+        "value": "\"discordggapp99@gmail.com\""
+      }
+    ]
+  }
+}

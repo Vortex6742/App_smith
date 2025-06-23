@@ -1,0 +1,63 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "defaultOptionValue": "ALL",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "dzo4gw16lo",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelText": "Select Studio",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 23,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 21,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 22.20166015625,
+  "parentId": "ce8d279msg",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 43,
+  "serverSideFiltering": false,
+  "sourceData": "{{\n  (() => {\n    // Prenez la liste de tous les plans. Le \"|| []\" est une sécurité anti-erreur.\n    const allShots = getVFX.data || [];\n    \n    // Extrayez tous les noms de studio\n    const allStudioNames = allShots.map(shot => shot.Studio);\n    \n    // Créez une liste de noms uniques\n    const uniqueStudios = [...new Set(allStudioNames)];\n    \n    // Formatez pour le menu déroulant\n    const options = uniqueStudios.map(studio => {\n      return {\n        label: studio,\n        value: studio\n      };\n    });\n    \n    // Ajoutez l'option \"Tous les studios\" au début et retournez le résultat final\n    return [{ label: \"Tous les studios\", value: \"ALL\" }, ...options];\n  })()\n}}",
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "rqiziy2t9w",
+  "widgetName": "SelectStudio"
+}

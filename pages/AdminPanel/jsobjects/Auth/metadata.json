@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "68526bd92a1f661159df310f_92c2f66a-8ab1-4807-a9e4-849f11bc58e5",
+  "id": "AdminPanel_Auth",
+  "unpublishedCollection": {
+    "name": "Auth",
+    "pageId": "AdminPanel",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "currentUserEmail",
+        "value": "\"tel.basile29@gmail.com\""
+      }
+    ]
+  }
+}

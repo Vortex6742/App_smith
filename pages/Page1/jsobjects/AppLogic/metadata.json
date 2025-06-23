@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "68526bd92a1f661159df310f_7f372836-df07-48e3-9ea3-fb6c8f7eaacf",
+  "id": "Page1_AppLogic",
+  "unpublishedCollection": {
+    "name": "AppLogic",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "selectedFilmId",
+        "value": "1"
+      }
+    ]
+  }
+}

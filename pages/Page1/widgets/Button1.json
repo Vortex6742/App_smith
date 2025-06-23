@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 71,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "s2urrusmuu",
+  "leftColumn": 16,
+  "minWidth": 120,
+  "mobileBottomRow": 70,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 66,
+  "needsErrorInfo": false,
+  "onClick": "{{aiStats.classifySelectedImage();}}",
+  "originalBottomRow": 70,
+  "originalTopRow": 66,
+  "parentColumnSpace": 29.40625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 32,
+  "text": "Tester la Classification",
+  "topRow": 67,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "lab8qhpify",
+  "widgetName": "Button1"
+}

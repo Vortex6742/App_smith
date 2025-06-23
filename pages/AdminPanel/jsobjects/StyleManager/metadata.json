@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "68526bd92a1f661159df310f_bb75bd6a-0334-497d-808e-8e1ca3e0ef5d",
+  "id": "AdminPanel_StyleManager",
+  "unpublishedCollection": {
+    "name": "StyleManager",
+    "pageId": "AdminPanel",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "primaryButton",
+        "value": "{\n  backgroundColor: 'rgba(59, 130, 246, 0.1)',\n  textColor: '#3B82F6',\n  border: '2px solid #3B82F6'\n}"
+      }
+    ]
+  }
+}
